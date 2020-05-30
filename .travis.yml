@@ -16,4 +16,4 @@ deploy:
   api_key: 77e8abf2-7634-40e4-9d80-b685c972c7e9
   app: recicoapp-back
   on:
-    repo: deveeup/recicoapp-back
+    repo: recicoapp/recicoapp-back
