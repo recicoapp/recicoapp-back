@@ -12,6 +12,7 @@
     "url": "git@github:recicoapp/recicoapp-back.git"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1"
   },
   "keywords": [],
