@@ -16,3 +16,7 @@ app.post("/post", function (req, res) {
 app.listen(config.port, function () {
   console.log(`happy code :D`);
 });
+
+app.get("/test", function (req, res) {
+  res.send("GlobHack 2020 - PR Function test");
+});
