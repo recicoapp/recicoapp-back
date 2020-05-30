@@ -12,6 +12,6 @@ app.post("/post", function (req, res) {
   res.send("GlobHack 2020 - Be4Tech");
 });
 
-app.listen(3000, function () {
+app.listen(3001, function () {
   console.log(`Run :)`);
 });
