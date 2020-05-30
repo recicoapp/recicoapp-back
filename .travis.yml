@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "12"
+git:
+  depth: 3
+notifications:
+  email:
+    reciepients:
+      - recicoapp@gmail.com
+    on_success: always
+    on_failure: always
+deploy:
+  provide: heroku
+  skip-cleanup: true
+  keep-history: true
+  api_key: 77e8abf2-7634-40e4-9d80-b685c972c7e9
+  app: recicoapp-back
+  on:
+    repo: deveeup/recicoapp-back

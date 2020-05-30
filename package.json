@@ -1,0 +1,25 @@
+{
+  "name": "recicoapp-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github:recicoapp/recicoapp-back.git"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "json-server": "^0.16.1",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.28",
+    "mongodb": "^3.5.6"
+  },
+  "keywords": [],
+  "author": "Be 4 Tech - Globhack 2020",
+  "license": "ISC"
+}
