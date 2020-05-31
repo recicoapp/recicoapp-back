@@ -16,7 +16,12 @@ let userSchema = new Schema({
   },
   status: {
     type: Boolean,
-    required: [true, "status is required"],
+    default: true,
+  },
+  deletedAt: {
+    type: Date,
+    required: false,
+    default: null,
   },
   nickName: {
     type: String,
