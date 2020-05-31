@@ -28,7 +28,3 @@ mongoose.connect(
 app.listen(process.env.PORT, () => {
   console.log("Escuchando puerto", process.env.PORT);
 });
-
-app.get("/test", function (req, res) {
-  res.send("GlobHack 2020 - PR Function test");
-});
