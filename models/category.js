@@ -25,6 +25,7 @@ let categorySchema = new Schema({
   quantity: {
     type: Number,
     required: false,
+    default: 0,
   },
 });
 
