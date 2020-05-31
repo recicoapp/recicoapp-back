@@ -61,7 +61,7 @@ app.post("/tournament", [verifyToken], (req, res) => {
   });
 });
 
-app.get("/tournaments", (req, res) => {
+app.get("/tournaments", [verifyToken], (req, res) => {
   let organizerId = String(req.query.organizerId);
 
   Tournament.find({ userId: organizerId }).exec((err, tournaments) => {
