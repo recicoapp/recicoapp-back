@@ -20,11 +20,11 @@ mongoose.connect(
   { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true },
   (err) => {
     if (err) throw err;
-    console.log("Se ha conectado a la BD");
+    console.log("Database connected");
   }
 );
 
 //server port start
 app.listen(process.env.PORT, () => {
-  console.log("Escuchando puerto", process.env.PORT);
+  console.log("Listening port", process.env.PORT);
 });
