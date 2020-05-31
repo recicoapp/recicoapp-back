@@ -1,9 +1,10 @@
 const express = require("express");
 const Award = require("../models/award");
+const { verifyToken } = require("../middlewares/authentication");
 
 const app = express();
 
-app.post("/award", (req, res) => {
+app.post("/award", [verifyToken], (req, res) => {
   let body = req.body;
 
   let award = new Award({

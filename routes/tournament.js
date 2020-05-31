@@ -1,10 +1,11 @@
 const express = require("express");
 const Tournament = require("../models/tournament");
 const Category = require("../models/category");
+const { verifyToken } = require("../middlewares/authentication");
 
 const app = express();
 
-app.post("/tournament", (req, res) => {
+app.post("/tournament", [verifyToken], (req, res) => {
   let body = req.body;
 
   let bitmap = new Buffer.from(body.image, "base64");
