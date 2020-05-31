@@ -27,6 +27,10 @@ let categorySchema = new Schema({
     required: false,
     default: 0,
   },
+  teamId: {
+    type: String,
+    required: false,
+  },
 });
 
 module.exports = mongoose.model("Category", categorySchema);

@@ -18,13 +18,25 @@ let teamSchema = new Schema({
     type: Buffer,
     required: false,
   },
-  userId: {
+  organizerUserId: {
     type: String,
     required: [true, "userId is required"],
   },
   tournamentId: {
     type: String,
     required: [true, "tournamentId is required"],
+  },
+  leaderUserId: {
+    type: String,
+    required: false,
+  },
+  leaderNick: {
+    type: String,
+    required: false,
+  },
+  leaderPassword: {
+    type: String,
+    required: false,
   },
 });
 
