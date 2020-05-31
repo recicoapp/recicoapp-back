@@ -1,9 +1,13 @@
 require("./config/index");
 const express = require("express");
+var cors = require("cors");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
 const app = express();
+
+//enable cors
+app.use(cors());
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -24,7 +28,6 @@ app.use(function (req, res, next) {
   );
   next();
 });
-
 
 //global config of routes
 app.use(require("./routes/index"));
