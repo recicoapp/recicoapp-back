@@ -2,7 +2,13 @@
 process.env.PORT = process.env.PORT || 3000;
 
 //environment
-process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
+process.env.NODE_ENV = process.env.NODE_ENV || "dev";
+
+//expiration time
+process.env.TOKEN_EXPIRATION = 60 * 60 * 24 * 30;
+
+//seed for jwt
+process.env.SEED = process.env.SEED || "seed-en-dev";
 
 //BD
 let urlDB;

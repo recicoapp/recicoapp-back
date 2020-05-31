@@ -18,7 +18,7 @@ app.use(require("./routes/index"));
 mongoose.connect(
   process.env.URLDB,
   { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true },
-  (err, res) => {
+  (err) => {
     if (err) throw err;
     console.log("Se ha conectado a la BD");
   }
